@@ -1,0 +1,87 @@
+{
+  "agent": {
+    "name": "Emerging Technology Creation Agent",
+    "specialty": "Technology creation and evolution",
+    "version": "0.1-student"
+  },
+  "analytical_question": "How did large-language-model-based generative AI conversational assistants come into existence, what combination of prior capabilities made them possible, and what does that creation and evolution imply for using one as a client-facing risk-tolerance intake and advisor-routing assistant at an established regional bank?",
+  "general_et_finding": "Large-language-model-based conversational assistants emerged through a sequence of developments rather than a single invention: attention-based Transformer architectures made sequence modeling substantially more parallelizable; large-scale autoregressive pretraining demonstrated increasingly general task performance from textual prompts; instruction tuning and reinforcement learning from human feedback improved the ability of pretrained models to follow user intent; and dialogue-specific fine-tuning converted those capabilities into conversational assistants. The resulting technology inherits a useful combination of flexible natural-language interaction, contextual response generation, and task adaptation through instructions, but it also inherits a fundamental limitation: fluent generation is based on learned statistical patterns rather than an intrinsic mechanism guaranteeing factual correctness. This creation trajectory therefore supports viewing conversational LLMs as flexible language interfaces whose outputs require application-specific controls rather than as inherently reliable decision authorities.",
+  "application_finding": "For risk-profiling intake, the inherited conversational and instruction-following capabilities are relevant because an LLM can potentially ask follow-up questions, clarify ambiguous natural-language responses, structure information, and summarize a conversation for downstream human use. This is an inference from the technology's demonstrated conversational and instruction-following capabilities, not direct evidence that a general-purpose LLM accurately measures financial risk tolerance. The same generative architecture also creates a material limitation: the assistant can produce plausible but erroneous interpretations or summaries, and its responses can be sensitive to wording. Consequently, the creation/evolution evidence supports a bounded intake-and-routing role more strongly than an autonomous risk classification, suitability determination, portfolio-allocation, or investment-recommendation role.",
+  "organization_specific_finding": "For a conservative regional bank operating in regulated wealth management, the technology's inherited flexibility is potentially valuable only if it is constrained by the bank's existing advisor workflow. The bank should not infer from conversational fluency or instruction-following improvements that the technology has acquired financial-advisory judgment. Because sensitive client information, traceability requirements, legacy integration, and medium-high downstream consequences increase the cost of an incorrect interpretation, the creation/evolution history favors a design in which the LLM structures and clarifies client-provided information while deterministic workflow controls and human financial advisors retain authority over consequential interpretation and recommendations. Current Federal Reserve model-risk guidance also emphasizes risk-based validation, understanding limitations, ongoing monitoring, and controls appropriate to model use and materiality. Whether and how that guidance applies to the bank's specific proposed system requires compliance, legal, and model-risk determination outside this specialist's authority.",
+  "evidence": [
+    {
+      "claim": "The Transformer architecture replaced recurrent and convolutional sequence-processing components with attention mechanisms and was designed to be more parallelizable and faster to train on the reported translation tasks.",
+      "source_or_reference": "Vaswani et al., 'Attention Is All You Need,' arXiv:1706.03762. [arXiv](https://arxiv.org/abs/1706.03762?utm_source=chatgpt.com)",
+      "date_or_recency": "2017",
+      "evidence_type": "Primary research paper",
+      "notes": "Supports the Transformer architecture as a major technical predecessor of modern LLMs. It does not by itself establish the later emergence of conversational assistants."
+    },
+    {
+      "claim": "GPT-3 demonstrated that scaling an autoregressive language model could substantially improve task-agnostic few-shot performance, with tasks and demonstrations supplied through textual interaction rather than task-specific gradient updates.",
+      "source_or_reference": "Brown et al., 'Language Models are Few-Shot Learners,' arXiv:2005.14165. [arXiv](https://arxiv.org/abs/2005.14165?utm_source=chatgpt.com)",
+      "date_or_recency": "2020",
+      "evidence_type": "Primary research paper",
+      "notes": "Supports large-scale pretraining and prompt-based task adaptation as important predecessor capabilities. The paper also reports tasks and datasets on which GPT-3 struggled, so scale did not eliminate limitations."
+    },
+    {
+      "claim": "InstructGPT combined supervised demonstrations, human rankings of model outputs, a learned reward model, and reinforcement learning from human feedback to improve instruction following; its authors reported improvements in human preference and truthfulness while acknowledging that the resulting models still made mistakes.",
+      "source_or_reference": "Ouyang et al., 'Training language models to follow instructions with human feedback,' arXiv:2203.02155. [arXiv](https://arxiv.org/abs/2203.02155?utm_source=chatgpt.com)",
+      "date_or_recency": "2022",
+      "evidence_type": "Primary research paper",
+      "notes": "Supports instruction tuning and human-feedback alignment as an important evolutionary step from general pretrained language models toward usable assistants. It does not establish error-free or domain-specific financial performance."
+    },
+    {
+      "claim": "ChatGPT's original 2022 release extended the InstructGPT approach into dialogue using supervised conversational data and RLHF; OpenAI documented capabilities such as handling follow-up questions while also documenting plausible-sounding incorrect answers and sensitivity to changes in input phrasing.",
+      "source_or_reference": "OpenAI, 'Introducing ChatGPT.' [OpenAI](https://openai.com/index/chatgpt/?utm_source=chatgpt.com)",
+      "date_or_recency": "November 30, 2022",
+      "evidence_type": "Primary developer technical/product documentation",
+      "notes": "Supports the transition from instruction-following LLMs to conversational assistants and directly documents inherited limitations relevant to client-facing dialogue."
+    },
+    {
+      "claim": "NIST identifies confabulation as a generative-AI risk in which systems can confidently produce erroneous or false content, explains that this is related to the statistical-generation design of generative models, and highlights particular concern when such systems are integrated into consequential decision-making applications.",
+      "source_or_reference": "NIST AI 600-1, 'Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile.' [NIST Publications](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf?utm_source=chatgpt.com)",
+      "date_or_recency": "July 2024; NIST publication page updated April 2026",
+      "evidence_type": "Government technical risk-management publication",
+      "notes": "Supports treating factual or interpretive reliability as an inherited limitation rather than assuming fluent output is accurate. The profile is cross-sectoral and does not specifically validate wealth-management risk profiling."
+    },
+    {
+      "claim": "Current U.S. interagency model-risk guidance emphasizes that model-risk practices should be risk-based and tailored to an institution's model usage and risk profile; validation should assess reliability and limitations, while ongoing monitoring and controls should reflect purpose, materiality, and changes in use.",
+      "source_or_reference": "Federal Reserve, SR 26-2 and Revised Guidance on Model Risk Management. [Federal Reserve](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm?utm_source=chatgpt.com)",
+      "date_or_recency": "April 17, 2026",
+      "evidence_type": "Current U.S. banking supervisory guidance",
+      "notes": "SR 26-2 superseded SR 11-7 in April 2026. This evidence informs the organization-specific interpretation but does not determine whether the proposed LLM system legally or institutionally qualifies as a model or exactly what controls the bank must apply."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "The cited creation/evolution evidence establishes general language, instruction-following, and conversational capabilities; it does not establish that a general-purpose LLM can validly measure an individual wealth-management client's risk tolerance.",
+    "RLHF and instruction tuning improved alignment with user intent but did not eliminate mistakes, fabricated information, prompt sensitivity, or other reliability limitations.",
+    "The ability to generate a coherent summary does not establish that the summary preserves every financially material nuance in a client's statements.",
+    "The Transformer and GPT-3 evidence demonstrates important predecessor capabilities but predates current commercial models; present systems may have materially different architectures, training processes, context handling, safeguards, and performance.",
+    "The proposed application combines generative technology with workflow design, data handling, human review, and potentially deterministic components. Performance of the complete system therefore cannot be inferred from LLM creation history alone.",
+    "No bank-specific pilot results, error rates, risk-profile concordance measurements, client-comprehension results, demographic performance analyses, vendor architecture details, or integration test evidence were supplied.",
+    "This specialist analysis does not determine regulatory compliance, investment suitability, fiduciary obligations, privacy compliance, cybersecurity adequacy, or overall organizational readiness."
+  ],
+  "confidence_and_uncertainty": "Confidence is high in the broad creation trajectory from Transformer architectures through scaled language-model pretraining, instruction tuning/RLHF, and dialogue-oriented assistants because those developments are documented in primary sources. Confidence is also high that fluent generative output can remain factually or contextually unreliable. Confidence is moderate in the application implication that these capabilities are well matched to bounded clarification, structuring, summarization, and routing, because that conclusion is an inference from general capabilities rather than direct evidence from this bank's use case. Confidence is low-to-moderate regarding the operational value and residual risk of the proposed deployment until the bank produces application-specific validation evidence.",
+  "value_opportunity_implication": "The creation trajectory suggests a specific value opportunity: LLMs combine a flexible natural-language interface with instruction-following and contextual dialogue, allowing clients to express answers less rigidly than in a conventional form while the system structures those responses for an advisor. For this bank, potential value therefore lies primarily in improving the interface around an existing human-advisor process rather than replacing the professional judgment embedded in that process. Actual efficiency, accessibility, completion-rate, or consistency gains remain hypotheses requiring pilot measurement.",
+  "risk_governance_implication": "The same history that produced conversational flexibility also produced an architecture that can generate plausible but unsupported content. A pilot should therefore separate generative functions from consequential authority: constrain the assistant to approved intake, clarification, summarization, and routing tasks; preserve original client responses alongside generated summaries where feasible; make escalation to a human explicit; test prompt sensitivity and material omissions; and evaluate whether the system changes or invents financially relevant meaning. For a bank, current model-risk guidance provides relevant principles concerning validation, limitations, monitoring, and vendor models, but the appropriate governance classification and regulatory controls require determination by the bank's model-risk, compliance, legal, privacy, security, and financial-advisory specialists.",
+  "recommendation_management_implication": "On the bounded creation/evolution evidence, management has a reasonable basis to consider a limited pilot, but not because LLM novelty or market momentum establishes value. The basis is narrower: the technology's evolved conversational and instruction-following capabilities plausibly fit structured intake and advisor routing, while its inherited reliability limitations argue for keeping consequential financial judgment outside the model. The pilot should therefore test the hypothesis that an LLM can improve intake without materially distorting client meaning, and it should preserve human advisor authority. Expansion beyond that boundary should depend on application-specific evidence rather than general improvements in LLM capability.",
+  "change_monitoring_triggers": [
+    "Pilot evidence shows material omissions, invented details, altered meaning, or unstable interpretations when client responses are rephrased.",
+    "Independent testing demonstrates materially improved or deteriorated accuracy in summarizing and structuring risk-tolerance information.",
+    "The contemplated role expands from intake and routing into autonomous risk scoring, suitability analysis, portfolio allocation, or individualized investment recommendations.",
+    "A vendor materially changes the underlying model, training approach, system prompt, retrieval architecture, safety controls, or data-handling arrangements.",
+    "New evidence establishes reliable methods for grounding or constraining generative outputs in this specific financial-intake application.",
+    "Changes in Federal Reserve, OCC, FDIC, SEC, FINRA, state, or other applicable guidance materially alter governance expectations for the proposed use.",
+    "The bank obtains evidence that particular client populations experience materially different comprehension, error, accessibility, or escalation outcomes.",
+    "Integration with legacy systems changes the information available to the assistant or permits generated content to enter consequential downstream workflows without human verification."
+  ],
+  "abstention_or_more_information_needed": [
+    "Application-specific validation data are needed to determine whether the assistant accurately captures, clarifies, and summarizes risk-tolerance responses across representative client scenarios.",
+    "The proposed model/vendor, deployment architecture, retrieval or grounding design, prompt constraints, data-retention arrangements, and deterministic workflow controls are needed to assess how strongly general LLM limitations carry into the implemented system.",
+    "The bank's existing risk-tolerance questionnaire, advisor-review process, escalation rules, and definition of an acceptable intake error are needed to judge the significance of potential LLM errors.",
+    "A regulatory/compliance specialist should determine applicable wealth-management, suitability, disclosure, recordkeeping, privacy, and AI-governance obligations; this Creation Agent does not make that determination.",
+    "A model-risk or validation specialist should determine the appropriate validation framework and governance classification under current supervisory guidance.",
+    "An organizational-readiness or implementation specialist should assess legacy-system integration, staffing, operational ownership, vendor management, and production readiness.",
+    "The supplied case requires the analysis to distinguish general technology evidence, application implications, and organization-specific implications and to separate evidence from inference; those requirements have been maintained here. Pasted text"
+  ]
+}

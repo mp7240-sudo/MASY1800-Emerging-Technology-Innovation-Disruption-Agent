@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Large-language-model-based generative AI conversational assistants",
+  "intended_application": "A client-facing conversational assistant that conducts investor risk profiling and then directly recommends or assigns an investment portfolio with minimal routine human review.",
+  "organization": "A venture-backed fintech startup offering digital investment services",
+  "industry_sector": "Fintech / digital investment and wealth-management services",
+  "business_need": "Scale personalized digital investment services while minimizing the cost and delay associated with human financial-advisor involvement.",
+  "users_stakeholders": "Retail investors, product and engineering teams, compliance and risk personnel, company management, and human staff responsible for exception handling.",
+  "adoption_posture": "Aggressive / leading-edge",
+  "capabilities_constraints": "Strong software-development capabilities and willingness to experiment rapidly; limited routine human review in the proposed workflow; sensitive customer and financial information; need for scalable automated decision support; and exposure to errors that may directly affect customer investment outcomes.",
+  "risk_consequence_context": "High. The AI's assessment may directly influence portfolio recommendations or allocation with minimal human intervention, making inaccurate, unsupported, or context-insensitive outputs potentially consequential for customer financial outcomes.",
+  "management_question": "Should the fintech deploy an LLM-based conversational assistant that moves from investor risk profiling directly into portfolio recommendation or allocation, and what inherited capabilities and limitations from the technology's creation and evolution are most consequential for that design?",
+  "time_horizon": "Next 12-18 months",
+  "additional_context": "Unlike the primary case, consequential investment recommendations or portfolio allocation may occur with minimal routine human review."
+}

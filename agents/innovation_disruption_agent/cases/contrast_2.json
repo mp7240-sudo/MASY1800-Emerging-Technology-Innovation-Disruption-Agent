@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Large-language-model-based generative AI conversational assistants",
+  "intended_application": "An internal assistant that summarizes wealth-management team meetings and produces draft meeting notes for employee review.",
+  "organization": "The same established regional bank with a wealth-management division used in the primary case",
+  "industry_sector": "Banking and wealth management / regulated financial services",
+  "business_need": "Reduce employee time spent preparing routine internal meeting summaries and improve the consistency of meeting documentation.",
+  "users_stakeholders": "Wealth-management employees, financial advisors and relationship managers, managers, technology teams, and information-security or compliance personnel responsible for internal systems.",
+  "adoption_posture": "Conservative / risk-averse",
+  "capabilities_constraints": "Existing internal collaboration workflows; potentially sensitive internal information; legacy technology integration; and employee review before summaries are relied upon or distributed.",
+  "risk_consequence_context": "Low relative to the primary case. Errors or omissions in draft internal meeting summaries are generally reviewable and correctable by employees before consequential use.",
+  "management_question": "What kind of innovation does employee-reviewed internal meeting summarization represent in the same regional bank, and could it alter the business model or primarily improve an internal process over the next 12-18 months? Identify created and displaced value and compare the mechanism with client-facing risk-profiling intake.",
+  "time_horizon": "Next 12-18 months",
+  "additional_context": "Outputs are internal drafts subject to employee review and correction rather than direct client-facing financial guidance. Hypothetical baseline assumption for this classroom scenario: employees currently prepare meeting notes manually using existing collaboration tools. The proposed assistant drafts notes for review; client service, distribution, and revenue arrangements remain as in the primary bank scenario. Time savings, accuracy, implementation cost, and competitive effects have not been measured. These are proposed uses, not evidence of a deployed or successful innovation. No disruption rating is predetermined."
+}

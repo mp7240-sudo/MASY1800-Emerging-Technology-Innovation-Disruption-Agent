@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Large-language-model-based generative AI conversational assistants",
+  "intended_application": "A client-facing conversational assistant that guides wealth-management clients through an initial risk-tolerance assessment, helps structure and clarify their responses, and routes the resulting information to a human financial advisor for individualized review and follow-up.",
+  "organization": "An established regional bank with a wealth-management division",
+  "industry_sector": "Banking and wealth management / regulated financial services",
+  "business_need": "Improve the efficiency, consistency, and accessibility of initial client risk-profiling intake while preserving human financial-advisor judgment for individualized investment analysis and consequential recommendations.",
+  "users_stakeholders": "Wealth-management clients, financial advisors and relationship managers, compliance and risk personnel, technology and data teams, and bank management.",
+  "adoption_posture": "Conservative / risk-averse",
+  "capabilities_constraints": "Existing human financial-advisor workflows; sensitive client and financial information; regulatory and compliance obligations; legacy technology integration; need for traceability and escalation; and limited tolerance for unsupported or misleading AI-generated financial guidance.",
+  "risk_consequence_context": "Medium-high. Errors in eliciting, interpreting, or summarizing client risk-tolerance information could influence downstream financial discussions. Individualized analysis and consequential investment recommendations remain subject to human financial-advisor review.",
+  "management_question": "Should the bank pilot an LLM-based conversational assistant for client risk-profiling intake and advisor routing, and what inherited capabilities and limitations from the technology's creation and evolution should management account for in designing the pilot?",
+  "time_horizon": "Next 12-18 months",
+  "additional_context": "The AI is intended to support structured intake and routing rather than independently make final investment recommendations or portfolio-allocation decisions."
+}
